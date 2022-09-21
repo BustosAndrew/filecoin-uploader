@@ -8,7 +8,7 @@ router.post("/upload", async (req, res) => {
 	try {
 		const storage = new Web3Storage({ token });
 		const cid = await storage.put(files);
-		res.send(cid + "/" + files.name);
+		res.send(cid + "/" + files);
 	} catch (err) {
 		res.send(err);
 	}
