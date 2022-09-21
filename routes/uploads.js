@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Web3Storage = require("web3.storage");
+const { Web3Storage } = require("web3.storage");
 
 router.post("/upload", async (req, res) => {
 	const files = req.body.files;
