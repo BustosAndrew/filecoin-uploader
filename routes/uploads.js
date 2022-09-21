@@ -11,7 +11,7 @@ router.post("/upload", async (req, res) => {
 		const cid = await storage.put(files);
 		res.send(cid);
 	} catch (err) {
-		res.send(err + "erroring");
+		res.send(err);
 	}
 });
 
